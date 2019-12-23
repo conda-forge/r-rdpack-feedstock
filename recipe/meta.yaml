@@ -1,4 +1,4 @@
-{% set version = '0.11-0' %}
+{% set version = "0.11-1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/Rdpack_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/Rdpack/Rdpack_{{ version }}.tar.gz
-  sha256: 8fb449c80fbe931cdce51f728fb03a1978009ccce66fd6b9edacdc6ff4118d85
+  sha256: 58020f150be07209fd1fdd7f5e58c138863e850f4e4c1512d69250286e091e20
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
