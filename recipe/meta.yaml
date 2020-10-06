@@ -25,12 +25,12 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-bibtex >=0.4.0
     - r-gbrd
+    - r-rbibutils >=1.3
   run:
     - r-base
-    - r-bibtex >=0.4.0
     - r-gbrd
+    - r-rbibutils >=1.3
 
 test:
   commands:
@@ -39,18 +39,19 @@ test:
 
 about:
   home: https://github.com/GeoBosh/Rdpack https://geobosh.github.io/Rdpack/
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: Functions for manipulation of R documentation objects, including functions reprompt() and ereprompt() for updating 'Rd' documentation for functions, methods and classes; 'Rd' macros for citations and import of references from 'bibtex' files for use in 'Rd' files and 'roxygen2' comments; 'Rd' macros for evaluating
     and inserting snippets of 'R' code and the results of its evaluation or creating graphics on the fly; and many functions for manipulation of references and Rd files.
   license_family: GPL3
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
+    - conda-forge/r
     - MathiasHaudgaard
     - FrodePedersen
     - ArneKr
-    - conda-forge/r
 
 # Package: Rdpack
 # Type: Package
