@@ -3,7 +3,7 @@ About r-rdpack
 
 Home: https://github.com/GeoBosh/Rdpack https://geobosh.github.io/Rdpack/
 
-Package license: GPL (>= 2)
+Package license: GPL-2.0-or-later
 
 Feedstock license: BSD-3-Clause
 
