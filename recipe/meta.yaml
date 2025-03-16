@@ -1,4 +1,4 @@
-{% set version = "2.6.2" %}
+{% set version = "2.6.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/Rdpack_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/Rdpack/Rdpack_{{ version }}.tar.gz
-  sha256: 729bf9e875368521e39d90d2c21f47c59f1851f07370af17ee63a1621f94df03
+  sha256: 134eaec7b7690647de3fea99d23c909ea0d69628c2d8d34c0a34ab2640b0ecb7
 
 build:
   number: 0
