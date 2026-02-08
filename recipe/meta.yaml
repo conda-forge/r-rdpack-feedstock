@@ -1,4 +1,4 @@
-{% set version = "2.6.5" %}
+{% set version = "2.6.6" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/Rdpack_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/Rdpack/Rdpack_{{ version }}.tar.gz
-  sha256: 2a33eceec41bffaa237dbcf34267de6d5c5a02ff79d7a919ea49d79bb14ceb03
+  sha256: b4e19d22bd5a2ec79cdb08ba209e79c66ea16dbc2fd2e7db8bca46412651cbdb
 
 build:
   number: 0
@@ -38,8 +38,8 @@ test:
 about:
   home: https://github.com/GeoBosh/Rdpack https://geobosh.github.io/Rdpack/
   license: GPL-2.0-or-later
-  summary: Functions for manipulation of R documentation objects, including functions reprompt() and ereprompt() for updating 'Rd' documentation for functions, methods and classes; 'Rd' macros for citations and import of references from 'bibtex' files for use in 'Rd' files and 'roxygen2' comments; 'Rd' macros for evaluating
-    and inserting snippets of 'R' code and the results of its evaluation or creating graphics on the fly; and many functions for manipulation of references and Rd files.
+  summary: Functions for manipulation of R documentation objects, including functions reprompt() and ereprompt() for updating 'Rd' documentation for functions, methods and classes; 'Rd' macros for citations and import of references from 'bibtex' files for use in 'Rd' files and 'roxygen2' comments; 'Rd' macros for 
+    evaluating and inserting snippets of 'R' code and the results of its evaluation or creating graphics on the fly; and many functions for manipulation of references and Rd files.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
